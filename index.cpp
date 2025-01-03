@@ -15,6 +15,9 @@ class Stack{
         this->top = -1;
         this->count = 0; 
     }
+    ~Stack(){
+        delete[] arr;
+    }
 
     void push();
     void pop();
